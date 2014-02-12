@@ -1,3 +1,6 @@
 [submodule "js/vendor/waypoints"]
 	path = js/vendor/waypoints
 	url = https://github.com/imakewebthings/jquery-waypoints.git
+[submodule "js/vendor/stellar"]
+	path = js/vendor/stellar
+	url = https://github.com/markdalgleish/stellar.js.git
