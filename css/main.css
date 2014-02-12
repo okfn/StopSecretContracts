@@ -583,6 +583,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
+  margin-bottom: 0.3em;
 }
 h1,
 h2,
@@ -659,7 +660,7 @@ button,
   border: none;
 }
 /* ==========================================================================
-   Targeted Styles
+   Targeted Styles - Mobile first
    ========================================================================== */
 .money {
   background-image: url(../img/money.png);
@@ -716,11 +717,14 @@ button,
   filter: none;
 }
 .container {
-  max-width: 940px;
+  max-width: 470px;
   padding-left: 10px;
   padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
+}
+.money.bottom .container {
+  max-width: 530px;
 }
 .content img {
   max-width: 100%;
@@ -874,11 +878,19 @@ button,
     display: none;
   }
 }
+/* Medium screens (portrait tablet) */
+@media only screen and (min-width: 530px) and (min-height: 670px) {
+  .form {
+    top: 30px;
+    margin-bottom: 30px;
+  }
+}
+/* Large screens */
 @media only screen and (min-width: 860px) and (min-height: 670px) {
   .light {
     font-size: 33px;
     font-size: 3.3rem;
-    padding-top: 55px;
+    padding-top: 30px;
   }
   h1 {
     font-size: 52px;
@@ -886,6 +898,7 @@ button,
   }
   h2 {
     padding-top: 70px;
+    margin-bottom: 0.4em;
   }
   .money {
     background-size: 1220px auto;
@@ -922,6 +935,9 @@ button,
   .ie9 .container .gradient {
     filter: none;
   }
+  .container {
+    max-width: 940px;
+  }
   .content {
     width: 460px;
   }
@@ -931,6 +947,7 @@ button,
     bottom: 0;
     right: 50%;
     margin-right: -430px;
+    margin-bottom: 0;
     width: 310px;
   }
   .form.stuck {
@@ -1002,6 +1019,16 @@ button,
   .form {
     margin-right: -480px;
     width: 340px;
+  }
+}
+@media only screen and (min-width: 530px) and (min-height: 700px) {
+  .light {
+    padding-top: 30px;
+  }
+}
+@media only screen and (min-width: 860px) and (min-height: 700px) {
+  .light {
+    padding-top: 55px;
   }
 }
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
