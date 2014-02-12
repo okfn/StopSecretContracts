@@ -3,13 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Jonathan Gray	-- Project Lead -- @jwyg
+		Theodora Middleton -- Copywriting
+		Sam Smith -- Design, Development -- @mintcanary
 
 # THANKS
 
-    <name>
+    
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    jQuery, Modernizr, Stellar, Waypoints
