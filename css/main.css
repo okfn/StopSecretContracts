@@ -773,6 +773,9 @@ button,
 .arrow {
   display: none;
 }
+.note {
+  display: none;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -938,12 +941,58 @@ button,
     left: 50%;
     bottom: 30px;
     margin-left: -32px;
+    z-index: 1;
   }
   .scrolled .arrow {
     display: none;
   }
   .money.top .btn {
     display: none;
+  }
+  .dark > .container {
+    position: relative;
+  }
+  .note {
+    display: inline-block;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+  }
+  .darkness .note {
+    opacity: 0.55;
+  }
+  #note1.note {
+    left: 635px;
+    top: 140px;
+  }
+  #note2.note {
+    left: 515px;
+    top: 0;
+  }
+  #note3.note {
+    left: 615px;
+    top: 450px;
+  }
+  #note4.note {
+    left: 640px;
+    top: 800px;
+  }
+  #note5.note {
+    left: 740px;
+    top: 1020px;
+  }
+  #note6.note {
+    left: 610px;
+    top: 1260px;
+  }
+  #note7.note {
+    left: 790px;
+    top: 1400px;
+  }
+  #note8.note {
+    left: 700px;
+    top: 1600px;
   }
 }
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
