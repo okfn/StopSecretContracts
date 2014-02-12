@@ -489,6 +489,7 @@ html {
   font-size: 62.5%;
   /* Make 1em equal 10px */
 
+  overflow-x: hidden;
 }
 body {
   font-size: 16px;
@@ -868,7 +869,12 @@ button,
 /* ==========================================================================
    Media Queries.
    ========================================================================== */
-@media only screen and (min-width: 880px) and (min-height: 670px) {
+@media only screen and (min-height: 500px) {
+  .money.top .btn {
+    display: none;
+  }
+}
+@media only screen and (min-width: 860px) and (min-height: 670px) {
   .light {
     font-size: 33px;
     font-size: 3.3rem;
@@ -924,7 +930,7 @@ button,
     top: auto;
     bottom: 0;
     right: 50%;
-    margin-right: -480px;
+    margin-right: -450px;
     width: 340px;
   }
   .form.stuck {
@@ -944,9 +950,6 @@ button,
     z-index: 1;
   }
   .scrolled .arrow {
-    display: none;
-  }
-  .money.top .btn {
     display: none;
   }
   .dark > .container {
@@ -993,6 +996,11 @@ button,
   #note8.note {
     left: 700px;
     top: 1600px;
+  }
+}
+@media only screen and (min-width: 900px) and (min-height: 670px) {
+  .form {
+    margin-right: -480px;
   }
 }
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
