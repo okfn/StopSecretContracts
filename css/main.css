@@ -783,6 +783,13 @@ button,
 .note {
   display: none;
 }
+.okfn-ribbon {
+  margin-right: 30px;
+  display: none;
+}
+.okfn-ribbon a {
+  border: none;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -905,6 +912,9 @@ button,
   .form {
     top: 30px;
     margin-bottom: 30px;
+  }
+  .okfn-ribbon {
+    display: block;
   }
 }
 /* Large screens */
