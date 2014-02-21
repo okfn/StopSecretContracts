@@ -740,6 +740,13 @@ button,
 .arrow {
   display: none;
 }
+.light .btn:link,
+.light .btn:visited,
+.light .btn:hover,
+.light .btn:focus,
+.light .btn:active {
+  border: none;
+}
 .container {
   max-width: 470px;
   padding-left: 10px;
