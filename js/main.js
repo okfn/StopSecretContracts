@@ -30,6 +30,7 @@ jQuery(document).ready(function ($) {
 	//initialise Stellar.js		
 		$(window).stellar({
 			horizontalScrolling: false,
+			hideDistantElements: false, //to fix problem with cached pages
 		});
 
 	
