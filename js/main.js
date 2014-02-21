@@ -27,8 +27,11 @@ $('.form').waypoint(function(direction) {
 
 jQuery(document).ready(function ($) {
 	
-	//initialise Stellar.js
-    $(window).stellar();
+	//initialise Stellar.js		
+		$(window).stellar({
+			horizontalScrolling: false,
+		});
+
 	
 	//Cache some variables
 			htmlbody = $('html,body')
