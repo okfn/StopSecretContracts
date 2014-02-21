@@ -718,6 +718,28 @@ button,
 .light p {
   padding-bottom: 0.2em;
 }
+.light a:link,
+.light a:visited,
+.light a:hover,
+.light a:focus,
+.light a:active {
+  border-bottom-style: dashed;
+}
+.light a:hover,
+.light a:focus,
+.light a:active {
+  border-bottom-style: solid;
+}
+.light .arrow:link,
+.light .arrow:visited,
+.light .arrow:hover,
+.light .arrow:focus,
+.light .arrow:active {
+  border: none;
+}
+.arrow {
+  display: none;
+}
 .container {
   max-width: 470px;
   padding-left: 10px;
@@ -769,16 +791,6 @@ button,
 }
 .footer .container {
   padding-top: 80px;
-}
-.arrow:link,
-.arrow:visited,
-.arrow:hover,
-.arrow:focus,
-.arrow:active {
-  border: none;
-}
-.arrow {
-  display: none;
 }
 .note {
   display: none;
