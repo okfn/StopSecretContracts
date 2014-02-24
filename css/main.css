@@ -798,6 +798,29 @@ button,
 }
 .footer .container {
   padding-top: 80px;
+  padding-bottom: 10px;
+}
+.footer h5 {
+  margin-bottom: 1.6em;
+}
+.footer h6 {
+  padding-top: 5px;
+}
+.footer p,
+.footer li {
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+.footer .logos {
+  margin-bottom: 15px;
+}
+.footer .supportors .column ul {
+  margin: 0;
+  padding: 0;
+}
+.footer .supportors .column ul li {
+  list-style: none;
+  padding: 0 0 10px 0;
 }
 .note {
   display: none;
@@ -1068,6 +1091,25 @@ button,
   #note8.note {
     left: 700px;
     top: 1600px;
+  }
+  .footer .supportors {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .footer .supportors:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .footer .supportors .column {
+    float: left;
+    width: 130px;
+    padding: 0 15px 0 14px;
+    border-left: solid 1px rgba(255, 255, 255, 0.7);
+  }
+  .footer .supportors .column:first-child {
+    border-left: none;
+    padding-left: 15px;
   }
 }
 @media only screen and (min-width: 925px) and (min-height: 670px) {
