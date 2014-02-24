@@ -50,6 +50,24 @@
   box-sizing: @sizing;
 }
 
+.columns(@colcount: 4, @colgap: 50px, @columnRuleColor: fade(@white, 70%), @columnRuleStyle: solid, @columnRuleWidth: 1px) {
+  -moz-column-count: @colcount;
+  -moz-column-gap: @colgap;
+  -moz-column-rule-color: @columnRuleColor;
+  -moz-column-rule-style: @columnRuleStyle;
+  -moz-column-rule-width: @columnRuleWidth;
+  -webkit-column-count: @colcount;
+  -webkit-column-gap: @colgap;
+  -webkit-column-rule-color: @columnRuleColor;
+  -webkit-column-rule-style: @columnRuleStyle;
+  -webkit-column-rule-width: @columnRuleWidth;
+  column-count: @colcount;
+  column-gap: @colgap;
+  column-rule-color: @columnRuleColor;
+  column-rule-style: @columnRuleStyle;
+  column-rule-width: @columnRuleWidth;
+}
+
 
 /* ==========================================================================
    Base styles
@@ -362,13 +380,13 @@ button,
 }
 .footer .container {
 	padding-top:80px;
-	padding-bottom:10px;
+	padding-bottom:20px;
 }
 .footer h5 {
 	margin-bottom:1.6em;
 }
 .footer h6 {
-	padding-top:5px;
+	padding-top:20px;
 }
 .footer p,
 .footer li {
@@ -377,13 +395,13 @@ button,
 .footer .logos {
 	margin-bottom:15px;
 }
-.footer .supportors .column ul {
+.footer .supportors ul {
 	margin:0;
 	padding:0;
 }
-.footer .supportors .column ul li {
+.footer .supportors ul li {
 	list-style:none;
-	padding:0 0 10px 0;
+	padding:5px 0;
 }
 
 .note {
@@ -676,23 +694,18 @@ button,
 		}
 		
 		.footer .supportors {
-			margin-left:-15px;
-			margin-right:-15px;
+			.columns;
 		}
-		.footer .supportors:after {
-			content: "";
-			display: table;
-			clear: both;
+		.no-csscolumns .footer .supportors h6,
+		.no-csscolumns .footer .supportors ul,
+		.no-csscolumns .footer .supportors li {
+			display:inline;
 		}
-		.footer .supportors .column {
-			float:left;
-			width:130px;
-			padding:0 15px 0 14px;
-			border-left:solid 1px fade(@white, 70%);
+		.no-csscolumns .footer .supportors h6:after {
+			content:': ';
 		}
-		.footer .supportors .column:first-child {
-			border-left:none;
-			padding-left:15px;
+		.no-csscolumns .footer .supportors li:after {
+			content:', ';
 		}
 }
 
