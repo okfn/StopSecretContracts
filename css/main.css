@@ -1153,7 +1153,8 @@ input[type="submit"] {
     column-rule-width: 1px;
   }
   .footer .supportors li {
-    display: block;
+    display: inline-block;
+    width: 100%;
   }
   .no-csscolumns .footer .supportors h6,
   .no-csscolumns .footer .supportors ul,
