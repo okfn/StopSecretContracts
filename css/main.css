@@ -1106,17 +1106,17 @@ button,
   .footer .supportors {
     -moz-column-count: 4;
     -moz-column-gap: 50px;
-    -moz-column-rule-color: rgba(255, 255, 255, 0.7);
+    -moz-column-rule-color: rgba(255, 255, 255, 0.3);
     -moz-column-rule-style: solid;
     -moz-column-rule-width: 1px;
     -webkit-column-count: 4;
     -webkit-column-gap: 50px;
-    -webkit-column-rule-color: rgba(255, 255, 255, 0.7);
+    -webkit-column-rule-color: rgba(255, 255, 255, 0.3);
     -webkit-column-rule-style: solid;
     -webkit-column-rule-width: 1px;
     column-count: 4;
     column-gap: 50px;
-    column-rule-color: rgba(255, 255, 255, 0.7);
+    column-rule-color: rgba(255, 255, 255, 0.3);
     column-rule-style: solid;
     column-rule-width: 1px;
   }
