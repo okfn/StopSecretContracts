@@ -862,6 +862,14 @@ input[type="submit"] {
 #okf-panel {
   border-color: #363636;
 }
+.redirect {
+  display: none;
+  text-align: center;
+  padding: 5px;
+}
+.signed .redirect {
+  display: block;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

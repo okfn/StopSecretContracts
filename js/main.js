@@ -51,6 +51,27 @@ jQuery(document).ready(function ($) {
 			dataslide = $(this).attr('data-slide');
 			goToByScroll(dataslide);
 	});
+	
+	//Thanks page
+	function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
+	
+	var redirect = getQueryVariable('petition');
+	
+	if (redirect === 'signed') {
+    $('body').addClass('signed');
+  }
+
+  
+	
 });
 
 // Placeholder pollyfill
