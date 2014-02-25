@@ -50,7 +50,7 @@
   box-sizing: @sizing;
 }
 
-.columns(@colcount: 4, @colgap: 50px, @columnRuleColor: fade(@white, 30%), @columnRuleStyle: solid, @columnRuleWidth: 1px) {
+.columns(@colcount: 2, @colgap: 50px, @columnRuleColor: fade(@white, 30%), @columnRuleStyle: solid, @columnRuleWidth: 1px) {
   -moz-column-count: @colcount;
   -moz-column-gap: @colgap;
   -moz-column-rule-color: @columnRuleColor;
@@ -397,7 +397,11 @@ button,
 	margin-bottom:1.6em;
 }
 .footer h6 {
-	padding-top:20px;
+	padding-top:15px;
+	margin:0.1em 0 0 0;
+}
+.footer h6:first-of-type {
+	padding-top:0;
 }
 .footer p,
 .footer li {
@@ -406,8 +410,11 @@ button,
 .footer .logos {
 	margin-bottom:15px;
 }
+.footer .supportors {
+	margin-top:10px;
+}
 .footer .supportors ul {
-	margin:0;
+	margin:0.1em 0 0 0;
 	padding:0;
 }
 .footer .supportors ul li {

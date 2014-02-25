@@ -815,7 +815,11 @@ button,
   margin-bottom: 1.6em;
 }
 .footer h6 {
-  padding-top: 20px;
+  padding-top: 15px;
+  margin: 0.1em 0 0 0;
+}
+.footer h6:first-of-type {
+  padding-top: 0;
 }
 .footer p,
 .footer li {
@@ -825,8 +829,11 @@ button,
 .footer .logos {
   margin-bottom: 15px;
 }
+.footer .supportors {
+  margin-top: 10px;
+}
 .footer .supportors ul {
-  margin: 0;
+  margin: 0.1em 0 0 0;
   padding: 0;
 }
 .footer .supportors ul li {
@@ -1105,17 +1112,17 @@ button,
     top: 1600px;
   }
   .footer .supportors {
-    -moz-column-count: 4;
+    -moz-column-count: 2;
     -moz-column-gap: 50px;
     -moz-column-rule-color: rgba(255, 255, 255, 0.3);
     -moz-column-rule-style: solid;
     -moz-column-rule-width: 1px;
-    -webkit-column-count: 4;
+    -webkit-column-count: 2;
     -webkit-column-gap: 50px;
     -webkit-column-rule-color: rgba(255, 255, 255, 0.3);
     -webkit-column-rule-style: solid;
     -webkit-column-rule-width: 1px;
-    column-count: 4;
+    column-count: 2;
     column-gap: 50px;
     column-rule-color: rgba(255, 255, 255, 0.3);
     column-rule-style: solid;
