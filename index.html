@@ -42,8 +42,18 @@
               <div class="form slide" id="sign" data-slide="sign">
                 <h3>Tell world leaders to stop secret contracts now.</h3>
                 <p>People everywhere deserve to know who gets public money for what, so governments and  contractors can be held to account.</p>
-                <input type="email" value="" placeholder="email address">
-                <button>Sign</button>
+                <form action="https://sendy.okfn.org/subscribe" method="POST" accept-charset="utf-8">
+                  <fieldset class="left">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="name"/>
+                  </fieldset>
+                  <fieldset class="right">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="email address"/>
+                  </fieldset>
+                  <input type="hidden" name="list" value="IVZ8ORGT8lkDGtPP892wzLzw"/>
+                  <input type="submit" name="submit" id="submit" value="Sign"/>
+                </form>
               </div>
             </div>
           </div>

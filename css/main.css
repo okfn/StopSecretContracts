@@ -640,6 +640,7 @@ a.no-border:focus,
 a.no-border:active {
   border: none;
 }
+input[type="text"],
 input[type="email"] {
   border-style: solid;
   border-width: 1px;
@@ -649,12 +650,14 @@ input[type="email"] {
   padding: 10px 0;
   margin-bottom: 20px;
 }
+input[type="text"]:focus,
 input[type="email"]:focus {
   border-color: #267f5d;
   text-indent: 10px;
 }
 button,
-.btn {
+.btn,
+input[type="submit"] {
   display: inline-block;
   background-color: #2c3136;
   border: none;
@@ -791,8 +794,24 @@ button,
   color: #2c3136;
   border-bottom-color: #2c3136;
 }
-.form button {
+.form button,
+.form input[type="submit"] {
   background-color: #267f5d;
+}
+.form fieldset.left,
+.form fieldset.right {
+  float: left;
+  width: 50%;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form fieldset.left {
+  padding-right: 10px;
+}
+.form fieldset.right {
+  padding-left: 10px;
 }
 .footer {
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC43Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
@@ -947,6 +966,11 @@ button,
 /* ==========================================================================
    Media Queries.
    ========================================================================== */
+@media only screen {
+  .js form label {
+    display: none;
+  }
+}
 @media only screen and (min-width: 320px) and (min-height: 500px) {
   .money.top .btn {
     display: none;
@@ -1231,5 +1255,25 @@ button,
   h2,
   h3 {
     page-break-after: avoid;
+  }
+  ::-webkit-input-placeholder {
+    /* WebKit browsers */
+  
+    color: transparent;
+  }
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+  
+    color: transparent;
+  }
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+  
+    color: transparent;
+  }
+  :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+  
+    color: transparent;
   }
 }
