@@ -629,6 +629,16 @@ a:focus,
 a:active {
   border-bottom-style: solid;
 }
+a.no-border:link,
+a.no-border:visited,
+a.no-border:hover,
+a.no-border:focus,
+a.no-border:active,
+a.no-border:hover,
+a.no-border:focus,
+a.no-border:active {
+  border: none;
+}
 input[type="email"] {
   border-style: solid;
   border-width: 1px;
