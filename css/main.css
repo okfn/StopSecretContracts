@@ -973,7 +973,7 @@ button,
   }
 }
 /* Medium screens (portrait tablet) */
-@media only screen and (min-width: 530px) and (min-height: 670px) {
+@media only screen and (min-width: 530px) and (min-height: 620px) {
   .form {
     top: 30px;
     margin-bottom: 30px;
@@ -983,15 +983,15 @@ button,
   }
 }
 /* Large screens */
-@media only screen and (min-width: 860px) and (min-height: 670px) {
+@media only screen and (min-width: 860px) and (min-height: 620px) {
   .light {
     font-size: 33px;
     font-size: 3.3rem;
     padding-top: 30px;
   }
   h1 {
-    font-size: 52px;
-    font-size: 5.2rem;
+    font-size: 48px;
+    font-size: 4.8rem;
   }
   h2 {
     padding-top: 70px;
@@ -1140,10 +1140,16 @@ button,
     content: ', ';
   }
 }
-@media only screen and (min-width: 925px) and (min-height: 670px) {
+@media only screen and (min-width: 925px) and (min-height: 620px) {
   .form {
     margin-right: -480px;
     width: 340px;
+  }
+}
+@media only screen and (min-width: 860px) and (min-height: 640px) {
+  h1 {
+    font-size: 52px;
+    font-size: 5.2rem;
   }
 }
 @media only screen and (min-width: 530px) and (min-height: 700px) {
