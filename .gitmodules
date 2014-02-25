@@ -4,3 +4,6 @@
 [submodule "js/vendor/stellar"]
 	path = js/vendor/stellar
 	url = https://github.com/markdalgleish/stellar.js.git
+[submodule "js/vendor/placeholder"]
+	path = js/vendor/placeholder
+	url = https://github.com/UmbraEngineering/Placeholder.git

@@ -52,3 +52,9 @@ jQuery(document).ready(function ($) {
 			goToByScroll(dataslide);
 	});
 });
+
+// Placeholder pollyfill
+Modernizr.load({
+    test: Modernizr.input.placeholder,
+    nope: 'js/vendor/placeholder/src/simple.js'
+});
