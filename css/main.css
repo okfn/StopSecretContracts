@@ -987,7 +987,7 @@ button,
   .light {
     font-size: 33px;
     font-size: 3.3rem;
-    padding-top: 30px;
+    padding-top: 20px;
   }
   h1 {
     font-size: 48px;
@@ -1153,6 +1153,9 @@ button,
   h1 {
     font-size: 52px;
     font-size: 5.2rem;
+  }
+  .light {
+    padding-top: 30px;
   }
 }
 @media only screen and (min-width: 530px) and (min-height: 700px) {
