@@ -611,8 +611,9 @@ h3 {
   font-size: 22px;
   font-size: 2.2rem;
 }
-p {
-  margin: 0;
+p,
+ul {
+  margin-bottom: 0;
   padding-bottom: 1em;
 }
 a:link,
