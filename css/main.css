@@ -590,7 +590,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.heading {
   font-family: Bevan, "Rockwell Extra Bold", "Rockwell Bold", monospace;
   text-transform: uppercase;
   font-weight: 400;
@@ -864,11 +865,59 @@ input[type="submit"] {
 }
 .redirect {
   display: none;
-  text-align: center;
-  padding: 5px;
 }
 .signed .redirect {
   display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.redirect .thanks {
+  text-align: center;
+  max-width: 470px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  color: #2c3136;
+  padding: 30px;
+  -webkit-box-shadow: 2px 2px 0 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 2px 2px 0 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 2px 0 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.redirect .thanks a:link,
+.redirect .thanks a:visited,
+.redirect .thanks a:hover,
+.redirect .thanks a:focus,
+.redirect .thanks a:active {
+  color: #2c3136;
+  border-bottom-color: #2c3136;
+}
+.redirect .heading {
+  display: block;
+  font-size: 22px;
+  font-size: 2.2rem;
+}
+.redirect .thanks .close,
+.redirect .thanks .close:link,
+.redirect .thanks .close:visited,
+.redirect .thanks .close:hover,
+.redirect .thanks .close:focus,
+.redirect .thanks .close:active {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: #2c3136;
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  line-height: 20px;
 }
 /* ==========================================================================
    Helper classes
@@ -990,6 +1039,13 @@ input[type="submit"] {
   }
   .light p {
     padding-bottom: 1em;
+  }
+  .signed .redirect {
+    padding-top: 100px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   }
 }
 /* Medium screens (portrait tablet) */
