@@ -851,6 +851,16 @@ input[type="submit"] {
 .note {
   display: none;
 }
+.footer .okf-footer {
+  margin-top: 20px;
+  border-top: solid 1px rgba(255, 255, 255, 0.3);
+}
+.footer .okf-footer .container {
+  padding: 0;
+}
+.footer .okf-footer .container ul {
+  padding: 0;
+}
 .okfn-ribbon {
   display: none;
   position: absolute;
