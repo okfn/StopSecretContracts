@@ -929,6 +929,43 @@ input[type="submit"] {
   color: #ffffff;
   line-height: 20px;
 }
+.redirect .thanks .share {
+  margin-top: 10px;
+}
+.twitter-btn,
+a.twitter-btn:link,
+a.twitter-btn:visited,
+a.twitter-btn:hover,
+a.twitter-btn:focus,
+a.twitter-btn:active,
+.redirect .thanks a.twitter-btn:link,
+.redirect .thanks a.twitter-btn:visited,
+.redirect .thanks a.twitter-btn:hover,
+.redirect .thanks a.twitter-btn:focus,
+.redirect .thanks a.twitter-btn:active {
+  display: inline-block;
+  background-color: #3399dd;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: solid 1px #3399dd;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  height: 9px;
+  line-height: 9px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  padding: 5px;
+}
+a.twitter-btn:hover,
+a.twitter-btn:focus,
+a.twitter-btn:active,
+.redirect .thanks a.twitter-btn:hover,
+.redirect .thanks a.twitter-btn:focus,
+.redirect .thanks a.twitter-btn:active {
+  background-color: #49a4e1;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

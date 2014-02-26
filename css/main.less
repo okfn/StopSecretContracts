@@ -14,6 +14,7 @@
 @green: #267f5d;
 @white: #FFF;
 @black: #000;
+@twitter: #3399DD;
 
 @headingfont: Bevan, "Rockwell Extra Bold", "Rockwell Bold", monospace;
 
@@ -74,6 +75,12 @@
   -moz-transition: all @duration @ease;
   -o-transition: all @duration @ease;
   transition: all @duration @ease;
+}
+
+.rounded(@radius: 2px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
 }
 
 
@@ -518,6 +525,43 @@ input[type="submit"] {
 	height:20px;
 	color:@white;
 	line-height:20px;
+}
+
+.redirect .thanks .share {
+	margin-top:10px;
+}
+
+.twitter-btn,
+a.twitter-btn:link,
+a.twitter-btn:visited,
+a.twitter-btn:hover,
+a.twitter-btn:focus, 
+a.twitter-btn:active,
+.redirect .thanks a.twitter-btn:link,
+.redirect .thanks a.twitter-btn:visited,
+.redirect .thanks a.twitter-btn:hover,
+.redirect .thanks a.twitter-btn:focus,
+.redirect .thanks a.twitter-btn:active {
+	display:inline-block;
+	background-color:@twitter;
+	.rounded;
+	border: solid 1px @twitter;
+	color:@white;
+	font-family: 'Helvetica Neue',Helvetica,Arial,'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-weight:bold;
+	font-size:11px;
+	height:9px;
+	line-height:9px;
+	text-shadow: 0 -1px 0 fade(@black, 30%);
+	padding:5px;
+}
+a.twitter-btn:hover,
+a.twitter-btn:focus, 
+a.twitter-btn:active,
+.redirect .thanks a.twitter-btn:hover,
+.redirect .thanks a.twitter-btn:focus,
+.redirect .thanks a.twitter-btn:active {
+	background-color:lighten(@twitter, 5%);
 }
 
 
