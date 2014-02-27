@@ -928,6 +928,7 @@ input[type="submit"] {
   display: block;
   font-size: 22px;
   font-size: 2.2rem;
+  margin-bottom: 15px;
 }
 .modal .modal-content .close,
 .modal .modal-content .close:link,
