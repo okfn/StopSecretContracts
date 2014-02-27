@@ -65,12 +65,22 @@ jQuery(document).ready(function ($) {
 }
 	
 	var redirect = getQueryVariable('petition');
+	var modal = getQueryVariable('page');
 	
 	if (redirect === 'signed') {
-    $('body').addClass('signed');
+    $('html').addClass('signed');
   }
 
-  
+  //get Involved
+	if (modal === 'get-involved') {
+    $('html').addClass('involved');
+  }
+	$( ".get-involved .modal-content .getin" ).load( "get-involved.html #getinvolved" );
+	
+	$(".get-involved-link").click(function( event ) {
+		event.preventDefault();
+		window.location = '?page=get-involved';
+	});
 	
 });
 
