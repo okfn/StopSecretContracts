@@ -1,0 +1,5 @@
+.navbar > .container .navbar-brand {
+  background-image:none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/logo.png',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/logo.png',sizingMethod='scale')";
+}
